@@ -1,5 +1,8 @@
 # Work in Progress at the moment
 
+## Quick Start
+
+``` bash
 # Install dependencies for server
 npm install
 
@@ -16,3 +19,4 @@ npm run server
 npm run client
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
+```
