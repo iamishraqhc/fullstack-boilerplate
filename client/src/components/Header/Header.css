@@ -1,0 +1,10 @@
+.navbar-nav {
+  padding: 0;
+  list-style: none;
+  width: 30%;
+  margin-left: auto;
+}
+
+.nav-item a:hover {
+  color: aquamarine;
+}
