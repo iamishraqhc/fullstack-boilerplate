@@ -1,4 +1,6 @@
-# Work in Progress at the moment
+## Latest Release ↓
+[![Latest release](https://img.shields.io/github/release/iamishraqhc/fullstack-boilerplate.svg)](https://github.com/iamishraqhc/fullstack-boilerplate/releases)
+
 
 ## Quick Start
 
