@@ -5,6 +5,7 @@
 }
 
 .App {
+  background-color:azure;
   text-align: center;
-  margin: 125px auto;
+  margin: auto;
 }

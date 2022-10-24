@@ -4,10 +4,10 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-white">
       <div className="container">
         <a className="navbar-brand" href="#">
-          Fullstack B~P
+          Fullstack Boilerplate
         </a>
         <button
           className="navbar-toggler"
@@ -36,9 +36,6 @@ const Header = () => {
               <a className="nav-link" href="#">
                 Pricing
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
             </li>
           </ul>
         </div>
