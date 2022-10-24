@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./FetchData.css";
 
-const FetchData = () => {
+const FetchData = ({ query }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const FetchData = () => {
   }, []);
 
   const getData = async () => {
-    const res = await axios.get("http://localhost:5000/customdata");
+    const res = await axios.get(`http://localhost:5000/${query}`);
     // console.log(res.data)
     setData(res.data);
   };

@@ -4,7 +4,7 @@ const app = express()
 app.use(cors())
 
 // a sample usage shown. Change it and add your own
-app.get('/customdata', (req, res) => {
+app.get('/himym', (req, res) => {
     const customData = [
         {
             id: 1,
@@ -30,6 +30,43 @@ app.get('/customdata', (req, res) => {
             id: 5,
             firstName: 'Lily',
             lastName: 'Aldrin'
+        }
+    ]
+
+    res.json(customData)
+})
+
+app.get('/friends', (req, res) => {
+    const customData = [
+        {
+            id: 1,
+            firstName: 'Rachel',
+            lastName: 'Green'
+        },
+        {
+            id: 2,
+            firstName: 'Ross',
+            lastName: 'Geller'
+        },
+        {
+            id: 3,
+            firstName: 'Monica',
+            lastName: 'Geller'
+        },
+        {
+            id: 4,
+            firstName: 'Chandler',
+            lastName: 'Bing'
+        },
+        {
+            id: 5,
+            firstName: 'Phoebe',
+            lastName: 'Buffay'
+        },
+        {
+            id: 6,
+            firstName: 'Joey',
+            lastName: 'Tribiani'
         }
     ]
 

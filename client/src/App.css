@@ -5,6 +5,8 @@
 }
 
 .App {
+  display: flex;
+  justify-content: space-around;
   background-color:azure;
   text-align: center;
   margin: auto;
