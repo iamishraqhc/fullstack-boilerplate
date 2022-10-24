@@ -10,7 +10,7 @@ const App = () => {
       <div className="App">
         <Component1 />
         <Component2 prop1="Component" prop2="2" />
-        <FetchData />
+        <FetchData query="himym" />
       </div>
       <Footer />
     </div>
