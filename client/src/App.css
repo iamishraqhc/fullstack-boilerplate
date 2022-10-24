@@ -1,7 +1,10 @@
 * {
-  background-color: aqua;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+  margin: 125px auto;
 }
