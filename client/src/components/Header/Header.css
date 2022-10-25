@@ -10,5 +10,14 @@
 }
 
 .navbar-brand {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black !important;
+}
+
+.nav-item {
+  font-weight: 500;
+}
+
+.active {
+  color: #0d6efd;
 }

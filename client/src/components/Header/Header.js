@@ -1,14 +1,15 @@
 // import necessary dependencies here
 import React from "react";
 import "./Header.css";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <NavLink to="/" className="navbar-brand" >
           Fullstack Boilerplate
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,24 +19,28 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon">
+            <div className="box-1"></div>
+            <div className="box-1"></div>
+            <div className="box-3"></div>
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink exact to="/home" className="nav-link" >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink to="features" className="nav-link"  >
                 Features
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink to="pricing" className="nav-link" >
                 Pricing
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -7,8 +7,38 @@
 .App {
   padding: 3em;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  background-color:azure;
+  background-color: azure;
   text-align: center;
   margin: auto;
+}
+
+.data-list {
+  min-width: 300px;
+  /* max-width: 600px; */
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.navbar-toggler-icon {
+}
+
+.box-1,
+.box-3,
+.box-3 {
+  width: 75%;
+  height: 2px;
+  margin: 20% auto;
+  background-color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
