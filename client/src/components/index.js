@@ -1,4 +1,4 @@
-// barrel file for component
+// barrel file for components
 // easier imports
 // if the number of components is too much, then ignore this way
 

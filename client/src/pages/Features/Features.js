@@ -1,6 +1,6 @@
 // import necessary dependencies here
 import React from "react";
-import { Header, Footer } from "../components";
+import { Header, Footer } from "../../components";
 
 const Features = () => {
   return (

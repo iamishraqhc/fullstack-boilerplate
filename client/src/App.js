@@ -5,13 +5,14 @@ import React from "react";
 // import FetchData from './components/FetchData/FetchData';
 // import { Component1, Component2, FetchData, Header, Footer } from "./components";
 import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Features from "./pages/Features";
-import Pricing from "./pages/Pricing";
+// import Home from "./pages/Home/Home";
+// import Features from "./pages/Features/Features";
+// import Pricing from "./pages/Pricing/Pricing";
+import { Home, Features, Pricing } from './pages'
 
 const App = () => {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <Switch>
           <Redirect exact from="/" to="/home" />
@@ -30,7 +31,7 @@ const App = () => {
           </Route> */}
         </Switch>
       </BrowserRouter>
-    </div>
+    </>
   );
 };
 

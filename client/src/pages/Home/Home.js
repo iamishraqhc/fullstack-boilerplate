@@ -1,11 +1,10 @@
 
 import React from "react";
-import { Header, Component1, Component2, FetchData, Footer } from "../components"
-// import Features from "./Features"
+import { Header, Component1, Component2, FetchData, Footer } from "../../components"
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <div className="App">
         <div className="data-list">
@@ -13,12 +12,9 @@ const Home = () => {
           <Component2 prop1="Component" prop2="2" />
           <FetchData query="himym" />
         </div>
-
-
       </div>
       <Footer />
-    </div>
-
+    </>
   );
 };
 
