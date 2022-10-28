@@ -1,7 +1,7 @@
 // import necessary dependencies here
 import React from "react";
 import "./Header.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -28,17 +28,17 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink exact to="/home" className="nav-link" >
+              <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="features" className="nav-link"  >
+              <NavLink to="/features" className="nav-link">
                 Features
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="pricing" className="nav-link" >
+              <NavLink to="/pricing" className="nav-link">
                 Pricing
               </NavLink>
             </li>

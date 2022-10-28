@@ -4,7 +4,7 @@ import React from "react";
 // import Component2 from './components/Component2/Component2';
 // import FetchData from './components/FetchData/FetchData';
 // import { Component1, Component2, FetchData, Header, Footer } from "./components";
-import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Routes } from "react-router-dom";
 // import Home from "./pages/Home/Home";
 // import Features from "./pages/Features/Features";
 // import Pricing from "./pages/Pricing/Pricing";
@@ -14,22 +14,11 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Switch>
-          <Redirect exact from="/" to="/home" />
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/features">
-            <Features />
-          </Route>
-          <Route path="/pricing">
-            <Pricing />
-          </Route>
-          {/* path="*" sends you back to the home page if the url doesn't matches */}
-          {/* <Route path="*">
-            <Home />
-          </Route> */}
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />}/>
+          <Route path="/pricing"element={<Pricing />}/>
+        </Routes>
       </BrowserRouter>
     </>
   );
